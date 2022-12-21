@@ -1,0 +1,17 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Burger House - Homepage'
+  - var pageClass = 'index-page'
+
+block content
+  - var welcomeInfo = ['It is a good time for the great taste of burgers', 'Burger', 'week']
+  - var infoText = ['Try it today', 'Most Popular Burger', 'More fun more taste', 'Fresh & Chili']
+
+  include ../custom/index-home/welcome
+  include ../custom/index-home/info
+  include ../custom/index-home/choose
+  include ../custom/index-home/discover
+  include ../custom/index-home/reservation
+
+block script

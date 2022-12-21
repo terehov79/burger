@@ -1,0 +1,108 @@
+.welcome
+  width 100%
+  height 100vh
+  background-image url("../img/content/background.png")
+  @media $lg-and-smaller
+    padding-top: 100px;
+    min-height 1250px
+  // для IPAD в точке медиа
+  @media $md-and-smaller
+    padding-top 0
+  @media $xs-and-smaller
+    padding-top: 100px;
+    min-height 667px
+  // для Iphone6 в точке медиа
+  @media $xxs-and-smaller
+    padding-top: 50px;
+    min-height 568px
+
+  .row, .col-lg-12, .container
+    height: 100%;
+    @media $lg-and-smaller
+      height: auto
+
+  .container
+    @media $lg-and-smaller
+      height: 100%;
+      display flex
+      align-items: center;
+
+  &_info
+    size(100%)
+    display: flex;
+    flex-direction column
+    justify-content: center;
+    align-items: flex-start;
+    @media $lg-and-smaller
+      height: auto;
+
+    p
+      display inline-block
+      font-family titleFont
+      font-size 23.65px;
+      color baseBrown
+      padding 8px 12px 5px
+      border 3px dashed baseBrown
+      @media $xs-and-smaller
+        font-size 20px
+      @media $xxs-and-smaller
+        font-size 16px
+
+    h1, h2
+      font-family subFont
+      font-size 114.3px
+      color baseBrown
+      text-shadow: 4px 3px 0 #fff;
+      text-transform uppercase
+      @media $xs-and-smaller
+        font-size 50px
+        padding-top: 20px;
+
+    h2
+      font-size 56.49px
+      @media $xs-and-smaller
+        font-size 30px
+
+  &_picture
+    size(100%)
+    display: flex;
+    flex-direction column
+    justify-content: center;
+    padding-top 130px
+    @media $lg-and-smaller
+      padding-top: 0;
+      height: auto;
+      transform translateX(30px)
+    @media $xs-and-smaller
+      padding-top 50px
+      transform translateX(0)
+    @media $xxs-and-smaller
+      padding-top 20px
+    &__wrap
+      position relative
+      width: 100%;
+
+    //border 2px solid red //----контейнер под картинку
+
+    &__shadow
+      position absolute
+      size(130px)
+      border-radius 50%;
+      //border 2px solid red //----объект для тени
+      left 50%
+      top 42%
+      transform translate(-50%, -50%)
+      box-shadow: 0px -64px 172px 22px rgba(255, 255, 255, 1);
+      z-index 1
+      @media $xs-and-smaller
+        top 50%
+
+    &__image
+      display block
+      width: 100%;
+      position relative
+      z-index 2
+
+    &__img
+      width: 100%;
+      height: auto;

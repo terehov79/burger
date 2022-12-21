@@ -1,0 +1,23 @@
+.info#info
+  .container
+    .row
+      .col-xl-6.col-lg-12
+        a(href='#').info_pictures
+          ._box
+            p= infoText[0]
+            p= infoText[1]
+          +img('content/info01', 'png', 'info_pictures')
+      .col-xl-6.col-lg-12
+        .twopic
+          a(href='#').info_pictures
+            ._box
+              p= infoText[0]
+              p= infoText[2]
+            +img('content/info02', 'png', 'info_pictures')
+          a(href='#').info_pictures
+            ._box
+              p= infoText[0]
+              p= infoText[3]
+            +img('content/info03', 'png', 'info_pictures')
+      .col-lg-12
+        +link_global('#', 'Always Tasty Burger')

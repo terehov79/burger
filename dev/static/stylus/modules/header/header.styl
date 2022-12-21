@@ -1,0 +1,54 @@
+.header
+  width 100%
+  display flex
+  justify-content space-between
+  align-items: flex-start;
+  padding-top 40px
+  position relative
+  @media $md-and-smaller
+    align-items: center;
+  @media $xxs-and-smaller
+    padding-top: 20px;
+  &__logo
+    img
+      @media $xs-and-smaller
+        size(80%)
+  &--wrap
+    width 100%
+    position absolute
+    top 0
+    left 0
+    z-index: 9999;
+  &__burger
+    display: none;
+    @media $md-and-smaller
+      display block
+  &__phone
+    display flex
+    justify-content flex-end
+    align-items: center;
+    padding-bottom 25px
+    @media $md-and-smaller
+      display none
+    svg
+      size(41px, 33px)
+      fill baseBrown
+      margin-right: 12px;
+    p
+      font-size 16.67px
+      font-weight: bold;
+      color baseBrown
+      a
+        margin-left: 6px;
+        color baseBrown
+  &__nav
+    @media $md-and-smaller
+      width 170px
+      background-color baseBrown
+      padding: 30px;
+      position absolute
+      right -400px
+      top: 120%;
+      transition transition
+  .menu-active
+    right 0

@@ -1,0 +1,13 @@
+.welcome
+  .container
+    .row
+      .col-xl-6.col-lg-12
+        .welcome_info
+          p= welcomeInfo[0]
+          h1= welcomeInfo[1]
+          h2= welcomeInfo[2]
+      .col-xl-6.col-lg-12
+        .welcome_picture
+          ._wrap
+            ._shadow
+            +img('general/welcome_burger', 'png', 'welcome_picture')

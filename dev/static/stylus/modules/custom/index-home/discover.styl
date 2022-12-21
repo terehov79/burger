@@ -1,0 +1,66 @@
+.discover
+  width 100%
+  padding 80px 0 100px
+  transform scale(1.02)
+  @media $xs-and-smaller
+    padding 30px 0 0
+  &_slide
+    width 100%
+    display: flex;
+    padding 30px
+    box-shadow: 0px 6px 19px -6px rgba(0,0,0,0.75);
+    @media $lg-and-smaller
+      display: flex;
+      flex-direction column
+      justify-content center
+      padding 60px 30px
+    @media $xs-and-smaller
+      padding 30px 30px 60px
+    &__info
+      width: 50%;
+      @media $lg-and-smaller
+        width: 100%;
+        padding-bottom 40px
+      span
+        font-size 29.17px
+        font-family: titleFont;
+        color baseGrayText
+        @media $xs-and-smaller
+          font-size 20px
+      h3
+        font-size 46px
+        font-family: subFont;
+        color baseBrown
+        padding-bottom: 30px;
+        text-transform uppercase
+        @media $xs-and-smaller
+          font-size 26px
+      p
+        line-height: 1.8;
+        font-size 20.83px
+        color baseGrayText
+        max-width 95%
+        @media $xs-and-smaller
+          font-size 16px
+          line-height: 1.2;
+    &__photo
+      width 50%
+      @media $lg-and-smaller
+        width: 100%;
+      img
+        width 100%
+  .swiper-container
+    padding: 40px 25px;
+  .swiper-pagination
+    left 0
+    bottom 70px
+    display flex
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+  .swiper-pagination-bullet
+    size(20px)
+    background-color baseGrayTexte
+  .swiper-pagination-bullet-active
+    size(20px)
+    background-color #ffc045

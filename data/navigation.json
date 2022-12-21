@@ -1,0 +1,9 @@
+{
+  "navPages": {
+    "Home" : "#",
+    "Menu" : "#info",
+    "Our Story" : "#choose",
+    "Discover" : "#discover",
+    "Contact Us" : "#reservation"
+  }
+}

@@ -1,0 +1,16 @@
+header.header--wrap
+  .container
+    .header
+      ._logo
+        +logotype('general/logo', 'png')
+      ._menu
+        ._phone
+          +icon('scooter')
+          p
+            | Express Delivery
+            a(href='tel:+1234567890')
+              | +1 234 567 890
+        ._nav
+          include menu
+        ._burger
+          +burger

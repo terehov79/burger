@@ -1,0 +1,29 @@
+.reservation#reservation
+  .container
+    .row
+      .col-12
+        .reservation_main
+          +img('content/bottle', 'png', 'reservation_main')
+          +img('content/plate', 'png', 'reservation_main')
+        .reservation_info
+          span reservation
+          h2 Book your table
+        form.reservation_form
+          .row
+            .col-lg-6.col-md-12
+              .form_item
+                label._label
+                  input(type='text' name='name' placeholder='Name')._input
+                label._label
+                  input(type='text' name='date' placeholder='Date')._input#date
+                label._label
+                  input(type='text' name='people' placeholder='People')._input
+            .col-lg-6.col-md-12
+              .form_item
+                label._label
+                  input(type='email' name='email' placeholder='Email')._input
+                label._label
+                  input(type='text' name='time' placeholder='Time')._input#time
+                ._btn
+                  button(type='submit' name='submit')._submit.btn_global
+                    | find a table
